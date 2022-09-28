@@ -452,6 +452,9 @@ func (b *httpConnectionManagerBuilder) Get() *envoy_listener_v3.Filter {
 		StreamIdleTimeout:   envoy.Timeout(b.streamIdleTimeout),
 		DrainTimeout:        envoy.Timeout(b.connectionShutdownGracePeriod),
 		DelayedCloseTimeout: envoy.Timeout(b.delayedCloseTimeout),
+		Http2ProtocolOptions: &envoy_core_v3.Http2ProtocolOptions{
+			AllowConnect: true,
+		},
 	}
 
 	// Max connection duration is infinite/disabled by default in Envoy, so if the timeout setting

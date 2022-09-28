@@ -624,6 +624,9 @@ func TestHTTPConnectionManager(t *testing.T) {
 						},
 						PreserveExternalRequestId: true,
 						MergeSlashes:              false,
+						Http2ProtocolOptions: &envoy_core_v3.Http2ProtocolOptions{
+							AllowConnect: true,
+						},
 					}),
 				},
 			},
@@ -675,6 +678,9 @@ func TestHTTPConnectionManager(t *testing.T) {
 						RequestTimeout:            protobuf.Duration(10 * time.Second),
 						PreserveExternalRequestId: true,
 						MergeSlashes:              false,
+						Http2ProtocolOptions: &envoy_core_v3.Http2ProtocolOptions{
+							AllowConnect: true,
+						},
 					}),
 				},
 			},
@@ -727,6 +733,9 @@ func TestHTTPConnectionManager(t *testing.T) {
 						},
 						PreserveExternalRequestId: true,
 						MergeSlashes:              false,
+						Http2ProtocolOptions: &envoy_core_v3.Http2ProtocolOptions{
+							AllowConnect: true,
+						},
 					}),
 				},
 			},
@@ -778,6 +787,9 @@ func TestHTTPConnectionManager(t *testing.T) {
 						PreserveExternalRequestId: true,
 						MergeSlashes:              false,
 						StreamIdleTimeout:         protobuf.Duration(90 * time.Second),
+						Http2ProtocolOptions: &envoy_core_v3.Http2ProtocolOptions{
+							AllowConnect: true,
+						},
 					}),
 				},
 			},
@@ -830,6 +842,9 @@ func TestHTTPConnectionManager(t *testing.T) {
 						},
 						PreserveExternalRequestId: true,
 						MergeSlashes:              false,
+						Http2ProtocolOptions: &envoy_core_v3.Http2ProtocolOptions{
+							AllowConnect: true,
+						},
 					}),
 				},
 			},
@@ -880,6 +895,9 @@ func TestHTTPConnectionManager(t *testing.T) {
 						},
 						PreserveExternalRequestId: true,
 						MergeSlashes:              false,
+						Http2ProtocolOptions: &envoy_core_v3.Http2ProtocolOptions{
+							AllowConnect: true,
+						},
 					}),
 				},
 			},
@@ -931,6 +949,9 @@ func TestHTTPConnectionManager(t *testing.T) {
 						PreserveExternalRequestId: true,
 						MergeSlashes:              false,
 						DelayedCloseTimeout:       protobuf.Duration(90 * time.Second),
+						Http2ProtocolOptions: &envoy_core_v3.Http2ProtocolOptions{
+							AllowConnect: true,
+						},
 					}),
 				},
 			},
@@ -982,6 +1003,9 @@ func TestHTTPConnectionManager(t *testing.T) {
 						PreserveExternalRequestId: true,
 						MergeSlashes:              false,
 						DrainTimeout:              protobuf.Duration(90 * time.Second),
+						Http2ProtocolOptions: &envoy_core_v3.Http2ProtocolOptions{
+							AllowConnect: true,
+						},
 					}),
 				},
 			},
@@ -1035,6 +1059,9 @@ func TestHTTPConnectionManager(t *testing.T) {
 						PreserveExternalRequestId: true,
 						MergeSlashes:              false,
 						DrainTimeout:              protobuf.Duration(90 * time.Second),
+						Http2ProtocolOptions: &envoy_core_v3.Http2ProtocolOptions{
+							AllowConnect: true,
+						},
 					}),
 				},
 			},
@@ -1085,6 +1112,9 @@ func TestHTTPConnectionManager(t *testing.T) {
 						},
 						PreserveExternalRequestId: true,
 						MergeSlashes:              true,
+						Http2ProtocolOptions: &envoy_core_v3.Http2ProtocolOptions{
+							AllowConnect: true,
+						},
 					}),
 				},
 			},
@@ -1136,6 +1166,9 @@ func TestHTTPConnectionManager(t *testing.T) {
 						PreserveExternalRequestId: true,
 						MergeSlashes:              false,
 						XffNumTrustedHops:         uint32(1),
+						Http2ProtocolOptions: &envoy_core_v3.Http2ProtocolOptions{
+							AllowConnect: true,
+						},
 					}),
 				},
 			},

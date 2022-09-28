@@ -284,6 +284,9 @@ func withWebsocket(route *envoy_route_v3.Route_Route) *envoy_route_v3.Route_Rout
 		&envoy_route_v3.RouteAction_UpgradeConfig{
 			UpgradeType: "websocket",
 		},
+		&envoy_route_v3.RouteAction_UpgradeConfig{
+			UpgradeType: "vizondemand-tunnel",
+		},
 	)
 	return route
 }
