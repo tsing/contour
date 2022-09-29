@@ -36,7 +36,7 @@ HIGHEST_SEMVER_TAG=""
 # us semantic sorting rather than lexicographic (alphabetic) sorting.
 for t in $(git tag -l --sort=-v:refname); do
     # Skip pre-release tags
-    if [[ "$t" == *"beta"* || "$t" == *"alpha"* || "$t" == *"rc"* ]]; then
+    if [[ "$t" == *"beta"* || "$t" == *"alpha"* || "$t" == *"rc"* || "$t" == *"vizondemand"* ]]; then
         continue
     fi
     HIGHEST_SEMVER_TAG="$t"
